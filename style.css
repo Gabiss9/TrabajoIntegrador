@@ -70,6 +70,8 @@ body {
     width: 280px;
 margin-top: 10px; 
 display: block;
+margin-left: auto;
+margin-right: auto;
     
   }
 
@@ -636,6 +638,50 @@ img[src= 'https://s.yimg.com/ny/api/res/1.2/d1HgIdEPHOld4a4oDXa7VA--/YXBwaWQ9aGl
   width: 500px;
 margin-top: 10px; 
 display: block; }
+
+
+
+/* novedades */
+
+img[src= 'https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/phvVT0qZfcRms5qDAk0SI3CM.png']  {
+  width: 300px;
+margin-top: 10px;
+margin-left: auto;
+margin-right: auto; 
+display: block; }
+
+img[src= 'https://image.api.playstation.com/vulcan/ap/rnd/202107/3100/1dy5w3SNiJnXjP8YvmydCL9X.png']  {
+  width: 300px;
+margin-top: 10px;
+margin-left: auto;
+margin-right: auto; 
+display: block; }
+
+
+img[src= 'https://www.gamerfocus.co/wp-content/uploads/2023/02/Mortal-Kombat-12-saldra-a-la-venta-este-ano-ahora-la-pregunta-es-cuando.png']  {
+  width: 400px;
+margin-top: 10px;
+margin-left: auto;
+margin-right: auto; 
+display: block; }
+
+img[src= 'https://cdn.akamai.steamstatic.com/steam/apps/1716740/capsule_616x353.jpg?t=1681234040']  {
+  width: 450px;
+margin-top: 10px;
+margin-left: auto;
+margin-right: auto; 
+display: block; }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
