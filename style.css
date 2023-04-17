@@ -1,5 +1,5 @@
 body {
-    background-color: #2e0314;
+    background-color: #5e102f;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: #ffffff;
@@ -59,10 +59,11 @@ body {
   
   footer {
     background-color: #160101ec;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     color: #c0b0b0e0;
     font-size: 15px;
+    
   }
   
   img[src='https://image.api.playstation.com/vulcan/ap/rnd/202207/1210/4xJ8XB3bi888QTLZYdl7Oi0s.png'] {
