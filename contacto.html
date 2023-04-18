@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <script src="cosas.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 </head>
 
 <style>
@@ -57,56 +59,48 @@
 }
 
 /* Estilos para el formulario */
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
-}
 
-form label {
-  margin-top: 20px;
-  display: block;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    text-align: center;
+    color: #fafafa;
+  }
+  
+  input, textarea {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
 
-form input[type="text"],
-form input[type="email"],
-form textarea {
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  margin-top: 5px;
-  font-size: 1.2rem;
-  resize: vertical;
-}
-
-form button[type="submit"] {
-  background-color: #000;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  margin-top: 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1.2rem;
-  transition: background-color 0.3s ease;
-}
-
-form button[type="submit"]:hover {
-  background-color: #555;
-}
-
-label {
-  text-align: center;
-  color:rgb(255, 255, 255);
-  font-size: 15px;
-  text-shadow: 0 0 10px #e93737;
-}
+  section{
+    margin-bottom: 35px;
+  }
 
 </style>
+
+
 
 <body>
 
@@ -144,23 +138,26 @@ label {
         </li>
       </ul>
     </div>
-    <form>
-      <label for="nombre"> Nombre:</label>
+  </section>
+
+  <section class="fomulario2" >
+    <form id="myForm">
+      <label for="nombre"> Nombre: </label>
       <input type="text" id="nombre" name="nombre" required>
-  
+    
       <label for="correo">Correo electrónico:</label>
       <input type="email" id="correo" name="correo" required>
-  
+    
       <label for="asunto">Asunto:</label>
       <input type="text" id="asunto" name="asunto" required>
-  
+    
       <label for="mensaje">Mensaje:</label>
       <textarea id="mensaje" name="mensaje" required></textarea>
-  
-      <button type="submit">Enviar mensaje</button>
+    
+      <button type="submit" onclick="validarFormulario(event)"> Enviar mensaje </button>
     </form>
   </section>
-  
+
 
 </body>
 

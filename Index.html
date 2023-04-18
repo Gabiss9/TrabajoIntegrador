@@ -7,6 +7,7 @@
   <title> Games</title>
   <link rel="stylesheet" href="style.css">
   <script src="cosas.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 </head>
 
 
@@ -48,15 +49,24 @@
     </div>
 </section>
 
+<section>
+    <div carrito1>
+       <h2>Carrito de compras</h2>
+       <ul id="carrito"></ul>
+    </div>
+</section>
+
+
+<section>
       <div class="container-juegos">
           <div class="juego">
             <figure>
 			       <img src="https://image.api.playstation.com/vulcan/ap/rnd/202207/1210/4xJ8XB3bi888QTLZYdl7Oi0s.png" alt="God">
             </figure>
             <div class="info-juego">
-              <h2> God of warfare </h2>
+              <h2> <a href="god of war.html"> God of warfare </a> </h2>
               <p class="precio "> $15.000 </p>
-              <button> añadir al carrito </button>
+              <button class="btn-carrito" data-id="god-of-war">  añadir al carrito </button>
             </div>
           </div>
           <div class="juego">
@@ -64,9 +74,9 @@
               <img src="https://image.api.playstation.com/cdn/UP0700/CUSA09072_00/2eBPISxxvTv5foYSDlqiBJfmRj5LZxv3.png" alt="z">
             </figure>
             <div class="info-juego">
-              <h2> Dragon ball z </h2>
+              <h2> <a href="dbz.html">  Dragon ball z </a> </h2>
               <p class="precio "> $18.000 </p>
-              <button> añadir al carrito </button>
+              <button class="btn-carrito" data-id="Dragon ball z"> añadir al carrito </button>
             </div>
           </div>
           <div class="juego">
@@ -74,9 +84,9 @@
               <img src="https://cdn.akamai.steamstatic.com/steam/apps/730/capsule_616x353.jpg?t=1641233427" alt="Cs">
             </figure>
             <div class="info-juego">
-              <h2> Counter Strike </h2>
+              <h2>  <a href="counter.html"> Counter Strike </a> </h2>
               <p class="precio "> $15.000 </p>
-              <button> añadir al carrito </button>
+              <button class="btn-carrito" data-id="god-of-war"> añadir al carrito </button>
             </div>
           </div>
           <div class="juego">
@@ -84,9 +94,9 @@
               <img src="https://www.lavanguardia.com/files/og_thumbnail/uploads/2021/09/02/6130d99519f60.png" alt="RO">
             </figure>
             <div class="info-juego">
-              <h2> Roblox </h2>
+              <h2> <a href="roblox.html"> Roblox </a> </h2>
               <p class="precio "> $15.000 </p>
-              <button> añadir al carrito </button>
+              <button class="btn-carrito" data-id="god-of-war"> añadir al carrito </button>
             </div>
           </div>
           <div class="juego">
@@ -94,9 +104,9 @@
               <img src="https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/games/fob/1280/V.jpg" alt="gta">
             </figure>
             <div class="info-juego">
-              <h2> GTA V </h2>
+              <h2> <a href="gta.html"> GTA V </a> </h2>
               <p class="precio "> $15.000 </p>
-              <button> añadir al carrito </button>
+              <button class="btn-carrito" data-id="god-of-war"> añadir al carrito </button>
             </div>
           </div>
           <div class="juego">
@@ -104,17 +114,17 @@
               <img src="https://www.lavanguardia.com/files/article_main_microformat/uploads/2022/09/28/633374d106b46.jpeg" alt="Ff">
             </figure>
           <div class="info-juego">
-              <h2> Fifa 2023 </h2>
+              <h2> <a href="fifa.html"> Fifa 2023 </a> </h2>
               <p class="precio "> $15.000 </p>
-              <button> añadir al carrito </button>
+              <button class="btn-carrito" data-id="god-of-war"> añadir al carrito </button> 
           </div>
       </div>
-
+</section>
 
    <div class="pi-de-pagina">
-  <footer>
-    <p>Derechos reservados & copy; Games 2023</p>
-  </footer>
+     <footer>
+       <p>Derechos reservados & copy; Games 2023</p>
+     </footer>
    </div>
 </body>
 </html>

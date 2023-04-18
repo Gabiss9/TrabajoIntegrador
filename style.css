@@ -25,6 +25,15 @@ body {
     width: 100%;
   }
 
+.carrito1{
+  align-items: baseline;
+  justify-content: flex-start;
+  width: auto;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  border-color: #f5f5f5;
+}
+
 .logo{
   display: flex;
   align-items: center;
@@ -194,11 +203,7 @@ nav{
       display: flex;
       align-items: center;
       justify-content: center;
-  }
-
-  .pie-de-pagina{
-    width: 100%;
-    height: 100%;
+      width: 100%;
   }
 
 
