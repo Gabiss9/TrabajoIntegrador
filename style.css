@@ -7,7 +7,8 @@
 }
 
 body {
-  background-color: #580d0d;
+    background-color: #580d0d;
+    background-color: #580d0d;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: #ffffff;
@@ -120,7 +121,7 @@ nav{
   
 
   a {
-    color: #f5f8f6fd;
+    color: #f6f5f8fd;
     text-decoration: none;
     font-weight: bold;
   }
