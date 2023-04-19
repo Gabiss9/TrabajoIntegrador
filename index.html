@@ -1,130 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Games</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="cosas.js"></script>
-  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"/>
+		<title>Games</title>
+		<link rel="stylesheet" href="estilo.css" />
+		<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 
+	</head>
+	<body>
+		<header>
+				<h1> <a href="index.html"> Games</a> </h1>
+			  </div>
 
-<body>
-  <header>
-    <div class="logo">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-joystick" viewBox="0 0 16 16">
-        <path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2z"/>
-        <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23z"/>
-      </svg>
-      <h1>Games</h1>
-    </div>
-    <nav>
-      <ul>
-		    <li><a href="index.html">Inicio</a></li>
-        <li><a href="nosotros.html">Quienes Somos?</a></li>
-        <li><a href="novedades.html">Novedades</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-<section class="secciom">
-    <div class="titulo2">
-      <h2>Búsqueda por categorías</h2>
-    </div>
+			<nav>
+				<ul>
+				  <li><a href="index.html">Inicio</a></li>
+				  <li><a href="nosotros.html">Quienes Somos?</a></li>
+				  <li><a href="novedades.html">Novedades</a></li>
+				  <li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			  </nav>
 
-  <div class="forma">
-      <form>
-        <label for="categoria">Selecciona una categoría:</label>
-        <select id="categoria">
-          <option value="accion">Acción</option>
-          <option value="aventura">Aventura</option>
-          <option value="deportes">Deportes</option>
-          <option value="shooters">shooters</option>
-        </select>
-        <button type="submit">Buscar</button>
-      </form>
-    </div>
-</section>
+			<div class="container-juegos">
+				<div class="container-juego-icon">
+                    <svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-game"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
 
-<section>
-    <div carrito1>
-       <h2>Carrito de compras</h2>
-       <ul id="carrito"></ul>
-    </div>
-</section>
+					<div class="count-game">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
 
+				<div class="container-juego-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="juego-product">
+							<div class="info-juego-product">
+								<span class="cantidad-juego-carrito">1</span>
+								<p class="titulo-producto-carrito">Zapatos Nike</p>
+								<span class="precio-producto-carrito">$80</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"/>
+							</svg>
+						</div>
+					</div>
 
-<section>
-      <div class="container-juegos">
-          <div class="juego">
-            <figure>
-			       <img src="https://image.api.playstation.com/vulcan/ap/rnd/202207/1210/4xJ8XB3bi888QTLZYdl7Oi0s.png" alt="God">
-            </figure>
-            <div class="info-juego">
-              <h2> <a href="god of war.html"> God of warfare </a> </h2>
-              <p class="precio "> $15.000 </p>
-              <button class="btn-carrito" data-id="god-of-war">  añadir al carrito </button>
-            </div>
-          </div>
-          <div class="juego">
-            <figure>
-              <img src="https://image.api.playstation.com/cdn/UP0700/CUSA09072_00/2eBPISxxvTv5foYSDlqiBJfmRj5LZxv3.png" alt="z">
-            </figure>
-            <div class="info-juego">
-              <h2> <a href="dbz.html">  Dragon ball z </a> </h2>
-              <p class="precio "> $18.000 </p>
-              <button class="btn-carrito" data-id="Dragon ball z"> añadir al carrito </button>
-            </div>
-          </div>
-          <div class="juego">
-            <figure>
-              <img src="https://cdn.akamai.steamstatic.com/steam/apps/730/capsule_616x353.jpg?t=1641233427" alt="Cs">
-            </figure>
-            <div class="info-juego">
-              <h2>  <a href="counter.html"> Counter Strike </a> </h2>
-              <p class="precio "> $15.000 </p>
-              <button class="btn-carrito" data-id="god-of-war"> añadir al carrito </button>
-            </div>
-          </div>
-          <div class="juego">
-            <figure>
-              <img src="https://www.lavanguardia.com/files/og_thumbnail/uploads/2021/09/02/6130d99519f60.png" alt="RO">
-            </figure>
-            <div class="info-juego">
-              <h2> <a href="roblox.html"> Roblox </a> </h2>
-              <p class="precio "> $15.000 </p>
-              <button class="btn-carrito" data-id="god-of-war"> añadir al carrito </button>
-            </div>
-          </div>
-          <div class="juego">
-            <figure>
-              <img src="https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/games/fob/1280/V.jpg" alt="gta">
-            </figure>
-            <div class="info-juego">
-              <h2> <a href="gta.html"> GTA V </a> </h2>
-              <p class="precio "> $15.000 </p>
-              <button class="btn-carrito" data-id="god-of-war"> añadir al carrito </button>
-            </div>
-          </div>
-          <div class="juego">
-            <figure>
-              <img src="https://www.lavanguardia.com/files/article_main_microformat/uploads/2022/09/28/633374d106b46.jpeg" alt="Ff">
-            </figure>
-          <div class="info-juego">
-              <h2> <a href="fifa.html"> Fifa 2023 </a> </h2>
-              <p class="precio "> $15.000 </p>
-              <button class="btn-carrito" data-id="god-of-war"> añadir al carrito </button> 
-          </div>
-      </div>
-</section>
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
+			</div>
+		</header>
 
-   <div class="pi-de-pagina">
-     <footer>
-       <p>Derechos reservados & copy; Games 2023</p>
-     </footer>
-   </div>
-</body>
+		<section class="secciom">
+			<div class="titulo2">
+			  <h2>Búsqueda por categorías</h2>
+			</div>
+		
+		  <div class="forma">
+			  <form>
+				<label for="categoria">Selecciona una categoría:</label>
+				<select id="categoria">
+				  <option value="accion">Acción</option>
+				  <option value="aventura">Aventura</option>
+				  <option value="deportes">Deportes</option>
+				  <option value="shooters">shooters</option>
+				</select>
+				<button type="submit">Buscar</button>
+			  </form>
+			</div>
+		</section>
+
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img src="https://image.api.playstation.com/vulcan/ap/rnd/202207/1210/4xJ8XB3bi888QTLZYdl7Oi0s.png" 
+                    alt="producto">
+				</figure>
+				<div class="info-product">
+					<h2><a href="god of war.html">God of warfare</a></h2>
+					<p class="price">$15000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+                    <img src="https://image.api.playstation.com/cdn/UP0700/CUSA09072_00/2eBPISxxvTv5foYSDlqiBJfmRj5LZxv3.png" 
+                    alt="producto">
+				</figure>
+				<div class="info-product">
+					<h2><a href="dbz.html">Dragon ball z</a></h2>
+					<p class="price">$18000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/730/capsule_616x353.jpg?t=1641233427" 
+                    alt="producto">
+				</figure>
+				<div class="info-product">
+					<h2>Counter Strike</h2>
+					<p class="price">$10000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+                    <img src="https://www.lavanguardia.com/files/og_thumbnail/uploads/2021/09/02/6130d99519f60.png" 
+                    alt="producto">
+				</figure>
+				<div class="info-product">
+					<h2>Roblox</h2>
+					<p class="price">$5000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+                    <img src="https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/games/fob/1280/V.jpg" 
+                    alt="producto">
+				</figure>
+				<div class="info-product">
+					<h2> <a href="gta.html"> GTA5 </a> </h2>
+					<p class="price">$11000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img src="https://cdn.akamai.steamstatic.com/steam/apps/990080/capsule_616x353.jpg?t=1680647016"
+					alt="producto">
+				</figure>
+				<div class="info-product">
+					<h2> <a href="harry.html"> Harry Photer Legacy </a> </h2>
+					<p class="price">$11000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="pi-de-pagina">
+			<footer>
+			  <p>Derechos reservados & copy; Games 2023</p>
+			</footer>
+		  </div>
+
+		<script src="java.js"></script>
+	</body>
 </html>

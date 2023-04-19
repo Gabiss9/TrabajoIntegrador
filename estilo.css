@@ -8,7 +8,6 @@
 
 body {
     background-color: #580d0d;
-    background-color: #580d0d;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: #ffffff;
@@ -31,16 +30,60 @@ img{
     max-width: 100%;
 }
 
+/* nav */
+
+nav{
+  display: flex;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  
+
+  a {
+    color: #f6f5f8fd;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    color: #580d0d;
+  }
+
+
 /* Header */
 header{
     display: flex;
     justify-content: space-between;
     padding: 30px 0 40px 0;
+    align-items: center;
+    background-color: #000000;
 }
 
 header h1{
     display: flex;
     margin-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    
+}
+
+header h1:hover{
+    color: #000000;
 }
 
 .container-juegos{
@@ -143,6 +186,35 @@ header h1{
     display: none;
 }
 
+.secciom {
+    background-color: #f5f5f5;
+    margin: 10px 0 20px;
+    padding: 20px;
+  }
+
+  .forma {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #580d0d;
+  }
+  
+  select {
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+  }
 
 
 
@@ -155,6 +227,7 @@ header h1{
 
 .item{
     border-radius: 10px;
+    background-color: darkgray;
 }
 
 .item:hover{
@@ -184,10 +257,14 @@ header h1{
     flex-direction: column;
     gap: 10px;
 }
+.info-product h2{
+    color: #000000;
+}
 
 .price{
     font-size: 18px;
     font-weight: 900;
+    color: #000;
 }
 
 .info-product button{
@@ -207,4 +284,12 @@ header h1{
 
 .hidden{
     display: none;
+}
+
+footer{
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
